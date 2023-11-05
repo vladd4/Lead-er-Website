@@ -1,0 +1,122 @@
+@import '../../styles/variable';
+
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $color-white;
+    color: $color-black;
+    border: none;
+    border-radius: 20px;
+    margin-top: 0.5%;
+    padding: 1.5% 0%;
+
+    .logo {
+        width: 11%;
+    }
+    .center_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3%;
+
+            img {
+                width: 10%;
+            }
+            a {
+                text-decoration: none;
+                color: $color-black;
+                font-size: calc(#{$size}/1.2);
+                transition: all .3s;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+        p {
+            font-size: calc(#{$size}/1.2);
+        }
+    }
+    .icons_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+
+        a {
+            width: 30%;
+        }
+        img {
+            width: 100%;
+            transition: all .3s;
+
+            &:hover {
+                scale: 1.1;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .root {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 700px){
+    .logo {
+        width: 15% !important;
+    }
+    .center_block {
+        div {
+            a {
+                font-size: calc(#{$size}) !important;
+            }
+        }
+        p {
+            font-size: calc(#{$size}) !important;
+            width: 45%;
+        }
+    }
+    .icons_block {
+        a {
+            width: 50% !important;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .logo {
+        width: 22% !important;
+    }
+    .center_block {
+        flex-direction: column-reverse;
+        margin: 3% 0% !important;
+        p {
+            width: 100% !important;
+            text-align: center;
+            font-size: 15px !important;
+        }
+        div {
+            a {
+            font-size: 15px !important;
+            }
+            img {
+                width: 8% !important;
+            }
+        }
+        
+    }
+    .icons_block {
+        width: 12% !important;
+        a {
+            width: 65% !important;
+        }
+    }
+}

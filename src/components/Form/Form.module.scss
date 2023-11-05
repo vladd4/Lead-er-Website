@@ -1,0 +1,121 @@
+@import '../../styles/variable';
+
+.root {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $color-white;
+    padding: 10% 0%;
+    background-image: url(../../assets/second-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+
+    h1 {
+        font-size: calc(#{$size}*2.1);
+        max-width: 35%;
+        font-family: 'Fixel Bold';
+    }
+    b {
+        color: $color-blue;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+
+        input {
+            width: 94%;
+            background-color: $color-white;
+            border: 2px solid $color-black;
+            border-radius: 20px;
+            font-size: calc(#{$size}/1.2);
+            padding: 5% 3%;
+            margin-bottom: 3%;
+
+            ::placeholder {
+                font-size: calc(#{$size}/1.2);
+            }
+        }
+        button {
+            background-color: $color-black;
+            color: $color-white;
+            width: 100%;
+            border: 2px solid $color-black;
+            border-radius: 20px;
+            font-size: calc(#{$size}/1.2);
+            padding: 5% 0%;
+            cursor: pointer;
+            transition: all .3s;
+            display: flex;
+                gap: 2%;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 3%;
+                    margin-top: 0%;
+                    transform: rotateZ(270deg);
+                }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .form {
+     width: 35% !important;
+    }
+ }
+
+ @media screen and (max-width: 600px){
+    .root {
+     margin-top: 5% !important;
+     margin-bottom: 7% !important;
+     background-size: cover !important;
+     flex-direction: column;
+
+     h1 {
+        font-size: calc(#{$size}*2.4) !important;
+        max-width: 75% !important;
+    }
+     .form {
+        width: 60% !important;
+        input {
+            font-size: calc(#{$size}*1.1) !important;
+            ::placeholder {
+                font-size: calc(#{$size}*1.1) !important;
+            }
+        }
+        button {
+            font-size: calc(#{$size}*1.1) !important;
+            padding: 5% 0%;
+        }
+     }
+    }
+ }
+ @media screen and (max-width: 550px) {
+    .root {
+        h1 {
+            font-size: 30px !important;
+        }
+        .form {
+            input {
+                font-size: 14px !important;
+                ::placeholder {
+                    font-size: 14px !important;
+                }
+            }
+            button {
+                font-size: 14px !important;
+            }
+         }
+    }
+ }

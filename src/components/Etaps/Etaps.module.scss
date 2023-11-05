@@ -1,0 +1,167 @@
+@import '../../styles/variable';
+
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5%;
+    
+    h1 {
+        font-size: calc(#{$size}*2.1);
+        padding-bottom: 2%;
+        border-bottom: 1px solid $color-blue;
+        color: $color-white;
+        font-family: 'Fixel Bold';
+    }
+    .form_h {
+        margin-top: 7%;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15%;
+        width: 75%;
+        color: $color-white;
+        margin-bottom: 0%;
+        transition: all .3s;
+        overflow-y: hidden;
+
+        &:hover {
+            h1 {
+                color: $color-blue;
+            }
+            .circle_block {
+                .circle {
+                background-color: $color-blue;
+               }
+            }
+            .circle_block_6 {
+                .circle {
+                background-color: $color-blue;
+               }
+            }
+            .circle_block_1 {
+                .circle {
+                background-color: $color-blue;
+               }
+            }
+        }
+
+        h1 {
+            font-size: calc(#{$size}*5);
+            border: none;
+            margin: 0;
+            padding: 0;
+            width: 10%;
+            transition: all .3s;
+        }
+        p {
+            font-size: calc(#{$size}/1.2);
+            max-width: 50%;
+            margin: 0;
+        }
+        .circle_block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .circle {
+                width: 25px;
+                height: 25px;
+                background-color: $color-white;
+                border: none;
+                border-radius: 50%;
+                z-index: 1001;
+                transition: all .3s;
+            }
+            .line {
+                margin-top: -20%;
+                border-left: 2px solid $color-white;
+                height: 120px;
+            }
+        }
+        .circle_block_1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 10%;
+
+            .circle {
+                width: 25px;
+                height: 25px;
+                background-color: $color-white;
+                border: none;
+                border-radius: 50%;
+                z-index: 1001;
+                transition: all .3s;
+            }
+            .line {
+                margin-top: -20%;
+                border-left: 2px solid $color-white;
+                height: 120px;
+            }
+        }
+        .circle_block_6 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 10%;
+
+            .circle {
+                width: 25px;
+                height: 25px;
+                background-color: $color-white;
+                border: none;
+                border-radius: 50%;
+                z-index: 1001;
+                transition: all .3s;
+            }
+            .line {
+                margin-top: -20%;
+                border-left: 2px solid $color-white;
+                height: 120px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .circle_block_1 {
+        .line {
+            height: 70px !important;
+        }
+    }
+    .circle_block {
+        .line {
+            height: 70px !important;
+        }
+    }
+    .circle_block_6 {
+        .line {
+            height: 70px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .root {
+        h1 {
+            font-size: 30px !important;
+        }
+        .row {
+            h1 {
+                font-size: 45px !important;
+            }
+            p {
+                font-size: 13px !important;
+                max-width: 75% !important;
+            }
+        }
+    }
+}

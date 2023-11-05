@@ -1,0 +1,146 @@
+@import './variable';
+@import './font.scss';
+
+body {
+  margin: 0;
+  padding: 0% 3%;
+  background-color: $color-black;
+  font-family: 'Fixel';
+}
+.toTop-btn {
+  width: 3%;
+  height: 6%;
+  position: fixed;
+  bottom: 1%;
+  right: 0.5%;
+  cursor: pointer;
+  transition: all .3s;
+  z-index: 999;
+  transform: translateY(150%);
+  background-color: $color-white;
+  border: none;
+  border-radius: 12px;
+  display: grid;
+  padding: 0.2%;
+  place-items: center;
+  border: 1px solid $color-black;
+
+  img {
+    width: 50%;
+  }
+  &:hover {
+      transform: scale(1.1);
+  }
+}
+.topShow {
+transform: translateY(0%);
+z-index: 999;
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a5a5a5;
+}
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-black;
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 40%;
+  left: 40%;
+  text-align: center;
+  width: 20%;
+  height: 20%;
+}
+
+.preloader__item {
+  position: absolute;
+  top: 0;
+  animation: preloader-bounce 2s infinite ease-in-out;
+
+  img {
+    width: 80%;
+  }
+}
+
+@keyframes preloader-bounce {
+  0%,
+  100% {
+    transform: scale(0.6);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+.loaded .preloader {
+  display: none;
+}
+
+.animated-element {
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+.animated-element.animate {
+  opacity: 1;
+}
+.animated-element-left {
+  opacity: 0;
+  transform: translateX(-60%);
+  transition: all 1.2s;
+}
+.animated-element-left.animate {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.animated-element-right {
+  opacity: 0;
+  transform: translateX(60%);
+  transition: all 1.2s;
+}
+.animated-element-right.animate {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .animated-element-left {
+    transform: translateX(-20%);
+  }
+  .animated-element-right {
+    transform: translateX(20%)
+  }
+  .toTop-btn {
+    width: 6%;
+    height: 4%;
+    right: 1.5% !important;
+  }
+}
+.current_lang {
+  color: $color-blue;
+  pointer-events: none;
+}

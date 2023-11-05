@@ -1,0 +1,59 @@
+@import '../../styles/variable';
+
+.root {
+    position: absolute;
+    width: 85%;
+    height: 50vh;
+    background-color: $color-white;
+    top: 100%;
+    display: grid;
+    place-items: center;
+    padding: 5% 0%;
+    transform: translateY(-120%);
+    transition: all .7s;
+    z-index: 999;
+    border-radius: 20px;
+    border: 1px solid $color-black;
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 85%;
+        flex-direction: column;
+        gap: 15px;
+
+        a {
+            text-decoration: none;
+            color: $color-black;
+            font-size: calc(#{$size}*1.2);
+            transition: all .3s;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        .language_block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5%;
+
+            p {
+                cursor: pointer;
+                transition: all .3s;
+                font-size: calc(#{$size}*1.2);
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+            .current_lang {
+                color: $color-blue;
+                pointer-events: none;
+            }
+        }
+    }
+}
+.showBurger {
+    transform: translateY(0%) !important;
+}

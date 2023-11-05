@@ -1,0 +1,76 @@
+@import '../../styles/variable';
+
+.root {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 0%;
+
+    .image {
+        width: 40%;
+    }
+    .text_block {
+        display: grid;
+        place-items: center;
+        color: $color-white;
+        max-width: 38%;
+
+        h1 {
+            font-size: calc(#{$size}*2.1);
+            border-bottom: 1px solid $color-blue;
+            padding-bottom: 2%;
+            margin: 0;
+            margin-bottom: 3%;
+            font-family: 'Fixel Bold';
+        }
+        p {
+            font-size: calc(#{$size}/1.2);
+            text-align: start;
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .root {
+        flex-direction: column;
+        gap: 25px;
+        .image {
+            width: 65% !important;
+        }
+        .text_block {
+            max-width: 65% !important;
+            p {
+                font-size: calc(#{$size}) !important;
+            }
+        }
+    }
+ }
+ @media screen and (max-width: 600px){
+    .root {
+        .image {
+            width: 85% !important;
+        }
+        .text_block {
+            max-width: 85% !important;
+            h1 {
+                font-size: calc(#{$size}*2.4) !important;
+            }
+            p {
+                font-size: calc(#{$size}*1.2) !important;
+            }
+        }
+    }
+ }
+ @media screen and (max-width: 550px){
+    .root {
+        margin: 10% 0% !important;
+        .text_block {
+            h1 {
+                font-size: 30px !important;
+            }
+            p {
+             font-size: 17px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import '../../styles/variable';
+
+.root {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../../assets/first-background.png);
+    background-color: $color-white;
+    background-size: cover;
+    background-position: right;
+    border-radius: 20px;
+    border: none;
+    display: grid;
+    place-items: center;
+   
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 48%;
+        
+        h1 {
+            font-size: calc(#{$size}*2.4);
+            font-weight: 950 !important;
+            max-width: 100%;
+            text-align: center;
+            margin: 0;
+            font-family: 'Fixel Bold';
+        }
+        p {
+            font-size: calc(#{$size}*1.1);
+           
+            max-width: 100%;
+            text-align: center;
+        }
+        a {
+            background-color: $color-black;
+            color: $color-white;
+            font-size: calc(#{$size}/1.1);
+            border: 1px solid $color-black;
+            border-radius: 20px;
+            padding: 2% 4%;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            gap: 3%;
+            width: 40%;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            img {
+                width: 8%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px){
+   .wrapper {
+    max-width: 60% !important;
+   }
+}
+@media screen and (max-width: 650px){
+    .root {
+        background-position: bottom !important;
+        .wrapper {
+            max-width: 75% !important;
+            h1 {
+                font-size: calc(#{$size}*2.4) !important;
+            }
+            p {
+                font-size: calc(#{$size}*1.3) !important;
+            }
+            a {
+                font-size: calc(#{$size}*1.1);
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px){
+    .root {
+        .wrapper {
+            max-width: 85% !important;
+            a {
+                padding: 3% 4% !important;
+                font-size: 13px !important;
+            }
+            h1 {
+                font-size: 30px !important;
+            }
+            p {
+              font-size: 17px !important;
+            }
+        }
+    }
+}

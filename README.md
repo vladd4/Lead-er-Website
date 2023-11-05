@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Lead-er Advertising: Bringing New Customers to Your Business
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Lead-er Advertising website, a showcase of dynamic ReactJS-based landing page project, designed to deliver an exceptional user experience for advertising services. Here's an overview of the core elements and technologies I've integrated:
 
-## Available Scripts
+## Features and technologies
 
-In the project directory, you can run:
+React: Utilizing the power and flexibility of React to create a dynamic and responsive UI.<br>
+JavaScript: Leveraging modern JavaScript to implement the logic and functionality of the landing page.<br>
+SCSS and Module SCSS: It is a technology that allows you to scope your SCSS styles locally to a specific component. This means that the styles defined for one component won't interfere with or be affected by styles defined in another component.<br>
+Multilingual Feature: Implementing a multilingual feature using i18n.js and storing translation strings in JSON files. This approach allows for easy translation management and ensures a seamless experience for both Ukrainian (UA) and English (EN) speakers.<br>
+Custom Hooks: Employing custom hooks to efficiently manage state and improve code reusability.<br>
+Good Folder Structure: Following a well-organized folder structure, including a "store" folder to hold all information and photos. This structure enhances code maintainability and scalability, making it easier for developers to work on and extend the project while allowing for easy manipulation of content and images.<br>
+Animations: Incorporating delightful animations to enhance user engagement and create a visually appealing experience.<br>
+Adaptive Design: Ensuring the landing page is accessible and visually appealing on various devices and screen sizes.<br>
 
-### `yarn start`
+## Folder Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+src/<br>
+|-- components/ # Reusable UI components<br>
+|-- hooks/ # Custom hooks for managing state and logic<br>
+|-- utils/ # Utility functions and helper modules<br>
+|-- store/ # All information for better management<br>
+|-- styles/ Variables and general styles<br>
+|-- App.jsx # Main application component<br>
+|-- index.js # Entry point for the application<br>
+|-- 18n.js # Configuration file of translation<br>
+|-- ... # Other configuration files and assets<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Developers
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [https://github.com/vladd4]
